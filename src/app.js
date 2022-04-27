@@ -30,4 +30,4 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 app.use(morgan('combined'));
 
 routes(app);
-app.listen(port);
+app.listen(process.env.PORT || port);
