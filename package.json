@@ -1,0 +1,36 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write src/**/*.{js,json,scss,css,handlebars}",
+    "start": "nodemon --inspect src/app.js",
+    "watch": "node-sass --watch src/resourcers/scss/app.scss src/public/css/app.css",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bktoanpv1/nodejs_server.git"
+  },
+  "author": "ToanBK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bktoanpv1/nodejs_server/issues"
+  },
+  "homepage": "https://github.com/bktoanpv1/nodejs_server/blob/main/README.md",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^5.3.5",
+    "mongoose": "^5.13.14",
+    "mqtt": "^4.3.7"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.6",
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
+  }
+}
